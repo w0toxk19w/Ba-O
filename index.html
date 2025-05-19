@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>❤️ Ba O Bonita ❤️</title>
+    <!-- Created By L3M4R1 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #000;
+            min-height: 100vh;
+            font-family: 'courier new', monospace;
+            overflow-x: hidden;
+        }
+        
+        .love-emoji {
+            position: fixed;
+            font-size: 24px;
+            color: red;
+            animation: float 5s infinite ease-in-out;
+            user-select: none;
+            pointer-events: none;
+            z-index: 100;
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+            25% {
+                transform: translate(50px, 50px) rotate(10deg);
+            }
+            50% {
+                transform: translate(100px, -30px) rotate(-10deg);
+            }
+            75% {
+                transform: translate(-50px, 70px) rotate(5deg);
+            }
+        }
+        
+        /* Full screen content */
+        .main-content {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+        
+        .content-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        hr {
+            border-color: red;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        
+        input[type="button"] {
+            background-color: #ff0000;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            margin: 10px;
+            cursor: pointer;
+            font-family: 'courier new';
+            font-size: 16px;
+            border-radius: 5px;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        }
+        
+        input[type="button"]:hover {
+            background-color: #cc0000;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.8);
+        }
+        
+        marquee {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 5px;
+            width: 100%;
+        }
+        
+        /* Blinking text effect */
+        .blink {
+            animation: blink 1.5s infinite alternate;
+        }
+        
+        @keyframes blink {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); }
+        }
+        
+        .image-container {
+            margin: 20px auto;
+            border: 2px solid red;
+            border-radius: 10px;
+            padding: 5px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            max-width: 300px;
+            width: 100%;
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 100%;
+        }
+        
+        /* Responsive text sizes */
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        p, .message-text {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            p, .message-text {
+                font-size: 1rem;
+            }
+            
+            input[type="button"] {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Script untuk emoji love bergerak -->
+    <script>
+        // Jumlah emoji love yang ingin ditampilkan
+        const emojiCount = 50;
+        
+        // Fungsi untuk membuat emoji love
+        function createLoveEmojis() {
+            for (let i = 0; i < emojiCount; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'love-emoji';
+                emoji.innerHTML = '❤️';
+                
+                // Posisi acak di dalam viewport
+                emoji.style.left = Math.random() * window.innerWidth + 'px';
+                emoji.style.top = Math.random() * window.innerHeight + 'px';
+                
+                // Animasi yang berbeda-beda
+                const duration = 3 + Math.random() * 7;
+                const delay = Math.random() * 5;
+                emoji.style.animation = `float ${duration}s infinite ease-in-out ${delay}s`;
+                
+                // Ukuran acak
+                const size = 20 + Math.random() * 30;
+                emoji.style.fontSize = size + 'px';
+                
+                // Opacity acak
+                emoji.style.opacity = 0.5 + Math.random() * 0.5;
+                
+                document.body.appendChild(emoji);
+            }
+        }
+    </script>
+
+    <div class="main-content">
+        <div class="content-container">
+            <script>
+                alert('Hai sayang...');
+                alert('Le Didiak Eh ');
+            </script>
+            
+            <div class="image-container">
+                <a href="http://L3m4r1.blogspot.com"><img src="https://assets.jalantikus.com/assets/cache/500/346/userfiles/2018/11/15/gambar-anime-romantis-10-3bbdd.jpg" alt="Lolykuu"/></a> 
+            </div>
+            
+            <h1 class="blink"><font color="red">Touched by: Mister Yahiko</font></h1>
+            
+            <p class="blink message-text">Hai Bonita Hau Hakarak O Hatene</p>
+            <p class="blink message-text">Durante Ne'e Hau Gosta Mate O pois Hakarak O sai Hau nian</p>
+            <p class="blink message-text">Maibe Agora Tempu Na Atu Kulia Serius Ba O Bonita</p>
+            <p class="blink message-text" style="text-shadow: 0 0 10px red;">Mau ga jadi pacarku?!?</p>
+            
+            <div style="margin: 30px 0;">
+                <a href="https://t.me/Easttimor_ghostsec"><input type="button" value="Iyah W Hakarak" onclick="alert('Makasih yah cantik  ❤️');"></a>
+                <a href="https://t.me/Easttimor_ghostsec"><input type="button" value="Kolega Deit" onclick="alert('Diak Hela Cantik Hau Komprende O ^_^');"></a>
+            </div>
+            
+            <hr>
+            
+            <div class="blink">
+                <p>("MY NOTES:")</p>
+            </div>
+            
+            <marquee class="blink">
+                [Aku Janji Bakal Sayang Kamu dan Setia Sama Kamu Cantik Tapi Jangan Pernah Bikin Aku Sakit Hati Iyah Bonita ]
+            </marquee>
+            
+            <div class="blink" style="margin: 20px 0;">
+                <p>My friends:)</p>
+                <p>[Mr.FOX-Brilly4n and Cyber Anonymous Family]</p>
+            </div>
+            
+            <div class="footer blink">
+                <a href="https://www.facebook.com/profile.php?id=61558186934114"><input type="button" value="Contact me on facebook" onclick="alert('Loading, please wait...');"></a>
+            </div>
+        </div>
+    </div>
+    
+    <style type="text/css">
+        body, a:hover {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur862.ani), url(http://cur.cursors-4u.net/cursors/cur-9/cur862.png), progress !important;}
+    </style>
+    
+    <!-- Script asli Anda yang lain -->
+    <script>
+        // Script asli Anda
+        function tb5_makeArray(n){
+            this.length = n;
+            return this.length;
+        }
+        
+        tb5_messages = new tb5_makeArray(7);
+        tb5_messages[0] = "Hay Kamu";
+        tb5_messages[1] = "Hau Hakarak O Hatene";
+        tb5_messages[2] = "Hau Gosta Los O";
+        tb5_messages[3] = "Hau Serius Bonita";
+        tb5_messages[4] = "O Hakarak Ga Lae Sai Hau nia Doben";
+        tb5_messages[5] = "Aku Harap O Simu Cantik";
+        tb5_messages[6] = "I Love You Cantik!!!";
+        tb5_rptType = 'infinite';
+        tb5_rptNbr = 20;
+        tb5_speed = 30;
+        tb5_delay = 2000;
+        var tb5_counter=2;
+        var tb5_currMsg=0;
+        var tb5_stsmsg="";
+        function tb5_shuffle(arr){
+            var k;
+            for (i=0; i<arr.length; i++){
+                k = Math.round(Math.random() * (arr.length - i - 1)) + i;
+                temp = arr[i];arr[i]=arr[k];arr[k]=temp;
+            }
+            return arr;
+        }
+        tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+        tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+        for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+            tb5_arr[i] = i;
+            tb5_sts[i] = "_";
+        }
+        tb5_arr = tb5_shuffle(tb5_arr);
+        function tb5_init(n){
+            var k;
+            if (n == tb5_arr.length){
+                if (tb5_currMsg == tb5_messages.length-1){
+                    if ((tb5_rptType == 'finite') && (tb5_counter==tb5_rptNbr)){
+                        clearTimeout(tb5_timerID);
+                        return;
+                    }
+                    tb5_counter++;
+                    tb5_currMsg=0;
+                }
+                else{
+                    tb5_currMsg++;
+                }
+                n=0;
+                tb5_arr = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+                tb5_sts = new tb5_makeArray(tb5_messages[tb5_currMsg].length);
+                for (var i=0; i<tb5_messages[tb5_currMsg].length; i++){
+                    tb5_arr[i] = i;
+                    tb5_sts[i] = "_";
+                }
+                tb5_arr = tb5_shuffle(tb5_arr);
+                tb5_sp=tb5_delay;
+            }
+            else{
+                tb5_sp=tb5_speed;
+                k = tb5_arr[n];
+                tb5_sts[k] = tb5_messages[tb5_currMsg].charAt(k);
+                tb5_stsmsg = "";
+                for (var i=0; i<tb5_sts.length; i++)
+                    tb5_stsmsg += tb5_sts[i];
+                document.title = tb5_stsmsg;
+                n++;
+            }
+            tb5_timerID = setTimeout("tb5_init("+n+")", tb5_sp);
+        }
+        function tb5_randomizetitle(){
+            tb5_init(0);
+        }
+        
+        // Panggil fungsi saat halaman dimuat
+        window.onload = function() {
+            createLoveEmojis();
+            tb5_randomizetitle();
+            
+            // Add blink class to all text elements
+            const texts = document.querySelectorAll('h1, p, marquee, .message-text');
+            texts.forEach(text => {
+                text.classList.add('blink');
+            });
+        };
+    </script>
+    
+    <!-- Script asli Anda yang lain -->
+    <iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/314301457&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    
+   </body>
+</html>
